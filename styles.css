@@ -22,11 +22,11 @@ body {
 h1, h2, h3, h4 {
     font-family: Fraunces, serif;
     font-weight: 900;
+    text-align: center;
 }
 
 h1 {
     text-transform: uppercase;
-    text-align: center;
     color: hsl(0, 0%, 100%);
     letter-spacing: 0.5rem;
 }
@@ -38,6 +38,8 @@ h2 {
 }
 
 h3 {
+    letter-spacing: 0.4em;
+    font-size: 14px;
     text-transform: uppercase;
     color: hsl(210, 4%, 67%);
 }
@@ -47,11 +49,14 @@ h4 {
 }
 
 h5 {
+    font-size: 13px;
     color: hsl(210, 4%, 67%);
+    text-align: center;
 }
 
 p {
     color: hsl(232, 10%, 55%);
+    text-align: center;
 }
 
 /* HEADER */
@@ -115,7 +120,6 @@ header nav {
 }
 
 .contentBlock p, h2 {
-    text-align: center;
     max-width: 320px;
 }
 
@@ -163,7 +167,6 @@ header nav {
 .graphicBlock p {
     padding: 0 22px 60px 22px;
     font-size: 16px;
-    text-align: center;
     line-height: 1.5em;
 }
 
@@ -185,11 +188,106 @@ header nav {
     color: hsl(198, 62%, 26%);
 }
 
+/* TESTIMONIALS */
+
+.testBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 22px 0 22px;
+}
+
+.testBox:last-of-type {
+    padding-bottom: 60px;
+}
+
+.testBox p {
+    padding-top: 28px;
+    line-height: 1.7em;
+}
+
+.testBox h4 {
+    padding-top: 28px;
+}
+
+.testBox h5 {
+    padding-top: 8px;
+}
+
+.testBox img {
+    border-radius: 50%;
+    width: 70px;
+}
+
+.testimonials h3 {
+    padding: 60px 22px 0px 22px;
+}
+    
+/* GALLERY */
+
+.gallery {
+    width: 100%;
+    max-height: 480px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: hsl(165, 39%, 66%);
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+footer h1 {
+    display: none;
+}
+
+#footerLogo {
+    padding-top: 60px;
+    width: 170px;
+    filter: brightness(0.3) sepia(1) hue-rotate(120deg) saturate(3);
+    opacity: 0.95;
+}
+
+footer nav {
+    margin: 34px 22px 0 22px;
+}
+
+nav a{
+    text-decoration: none;
+    color: hsl(168, 34%, 41%);
+    font-size: 19px;
+    padding: 0 20px 0px 20px;
+}
+
+footer section {
+    margin-top: 84px;
+    margin-bottom: 64px;
+}
+
+footer section a img {
+    padding: 0 10px 0 10px;
+}
+
 /* ATTRIBUTION */
 
 .attribution { 
     font-size: 11px; 
-    text-align: center; 
+    text-align: center;
+    padding: 20px; 
+    color: black;
+    opacity: 0.7;
 }
 
 .attribution a { 
