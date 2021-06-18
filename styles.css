@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    
+    font-size: 18px;
+    font-family: Barlow, sans-serif;
+
+    background-color: hsl(0, 0%, 100%);
+}
+
+/* FONTS  */
+
+h1, h2, h3, h4 {
+    font-family: Fraunces, serif;
+    font-weight: 900;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 0.5rem;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 900;
+    color: hsl(212, 27%, 19%);
+}
+
+h3 {
+    text-transform: uppercase;
+    color: hsl(210, 4%, 67%);
+}
+
+h4 {
+    color: hsl(212, 27%, 19%);
+}
+
+h5 {
+    color: hsl(210, 4%, 67%);
+}
+
+p {
+    color: hsl(232, 10%, 55%);
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    background-color: hsl(200, 100%, 62%);
+    position: fixed;
+    width: 100%;
+}
+
+header img:first-child {
+    padding: 10px 0px 6px 22px;
+    width: 110px;
+    object-fit: scale-down;
+}
+
+header img:last-child {
+    padding: 8px 22px 8px 0px;
+    width: 30px;
+    object-fit: scale-down;
+}
+
+header nav {
+    visibility: hidden;
+}
+
+/* TITLE BLOCK */
+
+.titleBlock {
+    margin-top: 50px;
+    background-image: url(images/mobile/image-header.jpg);
+    background-size: 100%;
+    background-position-y: -72px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleBlock h1 {
+    padding-top: 80px;
+}
+
+.titleBlock img {
+    margin-top: 50px;
+    margin-bottom: 132px;
+}
+
+/* MAIN CONTENT BLOCKS */
+
+.contentBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contentBlock img {
+    width: 100%;
+}
+
+.contentBlock p, h2 {
+    text-align: center;
+    max-width: 320px;
+}
+
+.contentBlock h2 {
+    padding: 60px 22px 28px 22px;
+}
+
+.contentBlock p {
+    line-height: 1.6em;
+    padding: 0 22px 28px 22px;
+}
+
+.contentBlock a {
+    margin: 0 22px 60px 22px;
+    color: hsl(210, 28%, 10%);
+    text-decoration: none;
+    font-family: Fraunces, serif;
+    font-weight: 900;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.yellowBorder {
+    border-bottom: 3px solid hsl(51, 100%, 72%);
+}
+
+.pinkBorder {
+    border-bottom: 3px solid hsl(7, 100%, 76%);
+}
+
+/* GRAPHIC BLOCKS */
+
+.graphicBlock {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%; 
+}
+
+.graphicBlock h2 {
+    font-size: 28px;
+    padding: 400px 22px 28px 22px;
+}
+
+.graphicBlock p {
+    padding: 0 22px 60px 22px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.typeA {
+    background-image: url(images/mobile/image-graphic-design.jpg);
+    background-size: 100%;
+}
+
+.typeA h2, p {
+    color: hsl(167, 40%, 24%);
+}
+
+.typeB {
+    background-image: url(images/mobile/image-photography.jpg);
+    background-size: 100%; 
+}
+
+.typeB h2, p {
+    color: hsl(198, 62%, 26%);
+}
+
+/* ATTRIBUTION */
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
