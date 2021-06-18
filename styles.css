@@ -63,7 +63,7 @@ p {
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 50px;
     background-color: hsl(200, 100%, 62%);
     position: fixed;
@@ -80,10 +80,6 @@ header img:last-child {
     padding: 8px 22px 8px 0px;
     width: 30px;
     object-fit: scale-down;
-}
-
-header nav {
-    visibility: hidden;
 }
 
 /* TITLE BLOCK */
@@ -294,4 +290,46 @@ footer section a img {
     color: hsl(228, 45%, 44%); 
 }
 
+/* MOBILE MENU */
 
+.menuBlock {
+    background-color: white;
+    position: fixed;
+    align-self: flex-end;
+    margin: 70px 22px 0 auto;
+}
+
+.triangle {
+    width: 10;
+    height: 10;
+    position: absolute;
+    z-index: 999;
+}
+
+.menuBlock nav {
+    padding-top: 22px;
+    padding-bottom: 36px;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.menuBlock nav a {
+    color: hsl(232, 10%, 55%);
+    line-height: 3em;
+}
+
+.menuBlock nav a:last-of-type {
+    font-family: Fraunces, serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color:hsl(210, 28%, 10%);
+    font-size: 16px;
+    background-color: hsl(51, 100%, 49%);
+    width: 100px;
+    margin-top: 20px;
+    line-height: 3.4em;
+    border-radius: 30px;
+    align-self: center;
+}
