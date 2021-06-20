@@ -3,7 +3,7 @@ let menu = document.getElementById("menuBlock");
 
 button.addEventListener("click", showMenu)
 
-var clickCounter = 0;
+let clickCounter = 0;
 
 function showMenu() {
     clickCounter += 1;     

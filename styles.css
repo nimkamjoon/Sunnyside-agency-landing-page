@@ -70,6 +70,10 @@ header {
     width: 100%;
 }
 
+header nav {
+    display: none;
+}
+
 header img:first-child {
     padding: 10px 0px 6px 22px;
     width: 110px;
@@ -111,24 +115,30 @@ header img:last-child {
     align-items: center;
 }
 
+.textArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .contentBlock img {
     width: 100%;
 }
 
-.contentBlock p, h2 {
+.textArea p, h2 {
     max-width: 320px;
 }
 
-.contentBlock h2 {
+.textArea h2 {
     padding: 60px 22px 28px 22px;
 }
 
-.contentBlock p {
+.textArea p {
     line-height: 1.6em;
     padding: 0 22px 28px 22px;
 }
 
-.contentBlock a {
+.textArea a {
     margin: 0 22px 60px 22px;
     color: hsl(210, 28%, 10%);
     text-decoration: none;
@@ -338,4 +348,105 @@ footer section a img {
     line-height: 3.4em;
     border-radius: 30px;
     align-self: center;
+}
+
+
+@media (min-width: 500px) {
+    header {
+        height: 70px;
+    }
+
+    header img:first-child {
+        padding: 20px 0px 20px 22px;
+        width: 130px;
+        object-fit: contain;
+    }
+
+    header nav {
+        display: inline;
+        padding: 22px 22px 6px 0px;
+    }
+
+    header nav a {
+        color: white;
+    }
+
+    header nav a:last-child {
+        font-family: Fraunces, serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        color:hsl(210, 28%, 10%);
+        font-size: 16px;
+        background-color: white;
+        border-radius: 30px;
+        padding: 10px 18px;
+        margin-left: 6px;
+    }
+    
+    header nav a:last-child:hover {
+        color: white;
+        background-color: hsl(200, 100%, 77%);
+    }
+    
+    header img:last-child {
+        display: none;
+    }
+
+    .titleBlock {
+        margin-top: 70px;
+        background-image: url(images/desktop/image-header.jpg);
+    }
+    
+    .titleBlock h1 {
+        font-size: 48px;
+    }
+
+    .titleBlock img {
+        margin-top: 100px;
+        padding-bottom: 175px;
+    }
+
+    .alternatingBlocks div:first-child {
+        flex-direction: row-reverse;
+    }
+
+    .alternatingBlocks div:last-child {
+        flex-direction: row;
+    }
+
+    .textArea {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 80px 450 80px;
+        grid-template-rows: 60px auto 28px auto 28px auto 60px;
+        justify-items: left;
+    }
+
+    .contentBlock img {
+        max-width: 50%;
+    }
+
+    .textArea h2 {
+        text-align: left;
+        padding: 0;
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .textArea p {
+        text-align: left;
+        padding: 0;
+        max-width: 450px;
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    .textArea a {
+        text-align: left;
+        padding: 0;
+        margin: 0;
+        grid-column: 2;
+        grid-row: 6;
+    }
+    
 }
