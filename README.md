@@ -19,10 +19,6 @@ Users should be able to:
 
 ![Project Screenshot Gif - Mobile version](screenshot-mobile.gif)
 
-### Links
-
-- Live Site URL: [https://nimkamjoon.github.io/Sunnyside-agency-landing-page/]
-
 ### Built with
 
 - HTML5 markup
